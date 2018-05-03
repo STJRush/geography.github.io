@@ -54,6 +54,31 @@ background-color: rgb(57, 76, 249));
 <li><a href="index5.html">Exam Papers</a></li>
 <li><a href="index6.html">why I chose Geography</a></li>
   </ul>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Prompt</h2>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:", "Harry Potter");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+        txt = "Hello " + person + "! Hope you enjoy my webpag!?";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
 </head>
 <body>
 
