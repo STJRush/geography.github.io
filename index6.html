@@ -50,8 +50,12 @@ th,td {
 </style>
 <body>
 
-<button type="button" onclick="loadXMLDoc()">Get my CD collection</button>
-<br><br>
-<table id="demo"></table>
+var person = prompt("Please enter your name", "Harry Potter");
+
+if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+} else {
+    txt = "Hello " + person + "I hope you enjoyed my Geography website!";
+}
 
 
